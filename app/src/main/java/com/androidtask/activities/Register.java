@@ -72,7 +72,7 @@ public class Register extends AppCompatActivity {
             String email = email_ed.getText().toString();
             String phone = phone_ed.getText().toString();
             String password = password_ed.getText().toString();
-
+            // Insert Data to DB
             insertData(firstName, lastName, email, phone, password);
 
             Toast.makeText(this, "Registered Successfully..", Toast.LENGTH_SHORT).show();

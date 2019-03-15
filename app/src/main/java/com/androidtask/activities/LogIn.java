@@ -88,7 +88,7 @@ public class LogIn extends AppCompatActivity {
                     user_data_edito.putString("userObject", json);
                     user_data_edito.commit();
                     user_data_edito.apply();
-
+                    //Start MainActivity
                     Intent intent = new Intent(LogIn.this, MainActivity.class);
                     intent.putExtra("userData", user);
                     startActivity(intent);
@@ -103,6 +103,7 @@ public class LogIn extends AppCompatActivity {
     public void goRegister() {
         Intent intent = new Intent(LogIn.this, Register.class);
         startActivity(intent);
+        //FinishActivity
         finish();
     }
 
