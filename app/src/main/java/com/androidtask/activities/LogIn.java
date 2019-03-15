@@ -103,6 +103,7 @@ public class LogIn extends AppCompatActivity {
     public void goRegister() {
         Intent intent = new Intent(LogIn.this, Register.class);
         startActivity(intent);
+        finish();
     }
 
     @Override

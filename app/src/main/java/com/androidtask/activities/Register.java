@@ -54,6 +54,7 @@ public class Register extends AppCompatActivity {
     public void goLogin() {
         Intent intent = new Intent(Register.this, LogIn.class);
         startActivity(intent);
+        finish();
     }
 
     @OnClick(R.id.register_btn_id)
@@ -76,6 +77,7 @@ public class Register extends AppCompatActivity {
 
             Toast.makeText(this, "Registered Successfully..", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(Register.this, LogIn.class));
+            finish();
         };
     }
 
